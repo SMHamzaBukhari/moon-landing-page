@@ -1,0 +1,71 @@
+.nav{
+    background-color: rgb(254, 238, 0);
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    color: darkslategrey;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+.nav .nav-deliver{
+  display: flex;
+  align-items: center;
+  font-size: smaller;
+  }
+
+.nav .nav-deliver p{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+    font-weight: lighter;
+  }
+.nav .nav-deliver p span{
+    font-weight: bold;
+  }
+.nav .nav-deliver #deliver-dropdown{
+    color: darkslategrey;
+  
+  }
+.nav .nav-search .search {
+      background-color: #fff;
+      height: 35px;
+      width: 400px;
+     border: none;
+     outline: none;
+     padding: 0 10px;
+     border-radius: 5px;
+  }
+  .nav .nav-buttons{
+      display: flex;
+      align-items: center;
+      
+  }
+  .nav .nav-buttons .signin{
+      display: flex;
+      margin-left: 10px;
+      padding-left: 5px;
+      border-left: 1px solid rgb(184, 179, 179);
+    }
+    .nav .nav-buttons .cart{
+        display: flex;
+        margin-left: 10px;
+        padding-left: 5px;
+        border-left: 1px solid rgb(184, 179, 179);
+      
+  }
+ .nav .nav-buttons .signin span ,.nav .nav-buttons .cart span{
+    color: gray;
+  
+    }
+  .nav .nav-deliver:hover ,.nav .nav-buttons .signin:hover ,.nav .nav-buttons .cart:hover{
+    opacity: 0.6;
+    transition: all 0.3s;
+  
+    }
+
+  @media only screen and (max-width : 800px){
+    .nav .nav-search .search {
+        width: 290px;
+    }
+  }
